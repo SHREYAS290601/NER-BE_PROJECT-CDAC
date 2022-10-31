@@ -11,3 +11,15 @@ NED is an unexplored area of NLP,thus making the area open to varios application
 ## Features
 
 - Going to write
+
+> The details of the project will be mentioned here
+> All the details will be written here
+
+
+## Tech
+- Tech will be added later
+- Python
+- Cuda
+- Tensorflow
+- Spacy
+- Keras
