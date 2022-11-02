@@ -1,4 +1,4 @@
-name: classification-random-gender
+name: NER
 on: [push]
 jobs:
   run:
@@ -6,11 +6,11 @@ jobs:
     container: docker://dvcorg/cml-py3:latest
     steps:
       - uses: actions/checkout@v2
-      - name: cml_run
+      - name: NER_RUN
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Your ML workflow goes here
           echo "## NER CREATED SAMPLE" > report.md
-          cml-publish image.png --md >> report.md
+          cml-publish ../NER-BEPROJECT/image.png --md >> report.md
           cml-send-comment report.md
