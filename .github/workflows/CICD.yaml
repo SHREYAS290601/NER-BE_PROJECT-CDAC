@@ -13,5 +13,5 @@ jobs:
           # Your ML workflow goes here
           echo "## NER CREATED SAMPLE" > report.md
           cml-publish NER-BEPROJECT/image.png --md >> report.md
-          cml-publish NER-BEPROJECT/df.png --md >> report.md
+          cml-publish df.PNG --md >> report.md
           cml-send-comment report.md
